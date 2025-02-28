@@ -1,0 +1,7 @@
+name: ${name}
+version: ${version}
+main: gatoartstudio.qailyquest.DailyQuest
+api-version: '1.21.1'
+authors: [ gatoartstudio ]
+folia-supported: true
+load: STARTUP

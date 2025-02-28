@@ -1,0 +1,21 @@
+database:
+  # Supported: mysql, sqlite
+  mysql:
+    enabled: false
+    host: localhost
+    port: 3306
+    database: test
+    username: root
+    password: root
+  sqlite:
+    enabled: true
+    path: plugins/QailyQuest/database.sqlite
+
+quests:
+  - type: KILL_ENTITY
+    count: 10
+  - type: WALK
+    count: 500
+  - type: PLANT
+    count: 5
+
