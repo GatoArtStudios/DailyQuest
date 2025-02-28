@@ -10,12 +10,29 @@ database:
   sqlite:
     enabled: true
     path: plugins/QailyQuest/database.sqlite
-
 quests:
-  - type: KILL_ENTITY
-    count: 10
-  - type: WALK
-    count: 500
-  - type: PLANT
-    count: 5
-
+  plant:
+    - seed: WHEAT_SEEDS
+      required: 5
+      reward: WHEAT
+    - seed: SPRUCE_SAPLING
+      required: 5
+      reward: WHEAT
+  kills:
+    - entity: ZOMBIE
+      required: 10
+      reward: WHEAT
+  craft:
+    - item: WHEAT
+      required: 5
+      reward: WHEAT
+  walk:
+    - distance: 100
+      reward: WHEAT
+    - distance: 50
+      reward: WHEAT
+  mquest_completation:
+    - level: 10
+      reward: WHEAT
+    - level: 20
+      reward: WHEAT

@@ -5,3 +5,15 @@ api-version: '1.21.1'
 authors: [ gatoartstudio ]
 folia-supported: true
 load: STARTUP
+commands:
+  dailyquestdev:
+    description: Comando para uso de desarrollo del plugin DailyQuest
+    usage: /dailyquestdev <assign|stats|complete|assign>
+    permission: dailyquest.dev
+permissions:
+  dailyquest.dev:
+    description: Permiso para uso de desarrollo del plugin DailyQuest
+    default: true
+  dailyquest.admin:
+    description: Permiso para uso del plugin DailyQuest
+    default: op
